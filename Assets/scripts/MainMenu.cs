@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour {
 
 	public string level1Tag;
 
+	//Que hace el boton NewGame
 	public void NewGame()
 	{
 		PlayerPrefs.SetInt(level1Tag, 1);
@@ -21,19 +22,20 @@ public class MainMenu : MonoBehaviour {
 		PlayerPrefs.SetInt ("CurrentScore", 0);
 
 	}
-
+	//Que hace el boton LevelSelect
 	public void LevelSelect()
 	{
 		PlayerPrefs.SetInt ("PlayerCurrentLives", playerLives);
-		PlayerPrefs.SetInt ("CurrentScore", 0);				
+		PlayerPrefs.SetInt ("CurrentScore", 0);
 		PlayerPrefs.SetInt(level1Tag, 1);
 		Application.LoadLevel (levelSelect);
 	}
 
+	//Que hace el boton QuitGame
 	public void QuitGame()
 	{
 		Debug.Log("Salí del juego");
 		Application.Quit();
-		
+
 	}
 }

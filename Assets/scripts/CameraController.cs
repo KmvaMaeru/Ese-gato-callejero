@@ -14,14 +14,15 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = FindObjectOfType<control>();		
+		player = FindObjectOfType<control>();
 		isFollowing = true;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+		//Para que la cámara siga al jugador
 		if(isFollowing)
 			transform.position = new Vector3(player.transform.position.x + xOffset, player.transform.position.y + yOffset, player.transform.position.z + zOffset);
-		
+
 	}
 }

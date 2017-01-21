@@ -13,25 +13,24 @@ public class scoremanager1 : MonoBehaviour {
 	{
 		text = GetComponent<Text>();
 
-		//score = 0;
-
 		score = PlayerPrefs.GetInt("CurrentScore");
 	}
 
 	void Update()
 	{
+		//Si por alguna razón el record es menor a 0
 		if (score < 0)
 		score = 0;
-
+		//Que va a decir el texto
 	text.text = "" + score;
 	}
-
+	//Que pasa si los puntos de agregan
 	public static void AddPoints (int pointsToAdd)
 	{
 		score+= pointsToAdd;
 		PlayerPrefs.SetInt ("CurrentScore", score);
 	}
-
+	//Resetea el record
 	public static void Reset()
 	{
 		score = 0;

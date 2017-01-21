@@ -6,6 +6,7 @@ public class CoinPickup : MonoBehaviour {
 
 	public int pointsToAdd;
 
+	//Detecta al jugador en el área del coleccionable
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		if(other.GetComponent<control>() == null)

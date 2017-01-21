@@ -9,27 +9,29 @@ public class HurtPlayerOnContact : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
 	}
 
+	// Update is called once per frame
+	void Update () {
+
+	}
+
+	//Que pasa si el jugador toca al objeto que hiere
 	 void OnTriggerEnter2D(Collider2D other)
     {
-            if(other.name == "gato2")
+						//Detecta al jugador
+						if(other.name == "gato2")
                {
-                HealthManager.HurtPlayer(damageToGive); 
+                HealthManager.HurtPlayer(damageToGive);
 
 		var player = other.GetComponent<control>();
 		player.knockbackCount = player.knockbackLength;
 
 		if(other.transform.position.x < transform.position.x)
-			player.knockFromRight = true;  
+			player.knockFromRight = true;
 		else
-			player.knockFromRight = false;  
+			player.knockFromRight = false;
                }
     }
 }

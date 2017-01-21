@@ -19,12 +19,13 @@ public class ActivateTextAtLine : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		theTextBox = FindObjectOfType<TextBoxManager>();
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
+		//Para iniciar un texto con tecla
 		if(waitForPress && Input.GetKeyDown(KeyCode.E))
 		{
 
@@ -37,11 +38,12 @@ public class ActivateTextAtLine : MonoBehaviour {
 			{
 				Destroy(gameObject);
 			}
-			
+
 		}
-		
+
 	}
 
+	//Para iniciar un texto cuando este cerca del NPC
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.name == "gato2")
@@ -65,6 +67,7 @@ public class ActivateTextAtLine : MonoBehaviour {
 		}
 	}
 
+	//Revisa si el jugador esta en el área
 	void OnTriggerExit2D(Collider2D other)
 	{
 		if(other.name == "gato2")

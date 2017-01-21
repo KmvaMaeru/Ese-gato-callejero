@@ -24,11 +24,12 @@ public class LifeManager : MonoBehaviour {
 		lifeCounter = PlayerPrefs.GetInt("PlayerCurrentLives");
 
 		player = FindObjectOfType<control>();
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+		//Que pasa si no quedan vidas
 		if(lifeCounter < 1)
 	{
 		gameOverScreen.SetActive(true);
@@ -36,25 +37,29 @@ public class LifeManager : MonoBehaviour {
 	}
 
 
+		//Que va a decir el contador de vidas
 		theText.text = "x " + lifeCounter;
 
+		//Si la pantalla de GameOver esta activa
 		if(gameOverScreen.activeSelf)
 		{
 			waitAfterGameOver -= Time.deltaTime;
 		}
+		//Si acabó el tiempo de espera de la pantalla de GameOver
 		if(waitAfterGameOver < 0)
 		{
 			Application.LoadLevel(mainMenu);
 		}
-		
+
 	}
 
+	//Que pasa cuando tomas una vida
 	public void GiveLife()
 	{
 		lifeCounter++;
 		PlayerPrefs.SetInt ("PlayerCurrentLives", lifeCounter);
 	}
-	
+	//Que pasa si eres herido
 	public void TakeLife()
 	{
 		lifeCounter--;

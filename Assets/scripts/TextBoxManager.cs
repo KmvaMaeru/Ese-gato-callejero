@@ -25,7 +25,7 @@ public class TextBoxManager : MonoBehaviour {
 	void Start () {
 
 		player = FindObjectOfType<control>();
-	
+		//Importa el texto de un archivo externo
 		if(textFile != null)
 		{
 			textLines = (textFile.text.Split('\n'));
@@ -35,7 +35,7 @@ public class TextBoxManager : MonoBehaviour {
 		{
 			endAtLine = textLines.Length - 1;
 		}
-		
+		//QUe pasa si hay texto activo
 		if(isActive)
 		{
 			EnableTextBox();
@@ -46,21 +46,19 @@ public class TextBoxManager : MonoBehaviour {
 	}
 	void Update()
 	{
-
-
-		
+		//QUe pasa si no hay texto activo
 
 		if(!isActive)
 		{
 			return;
 		}
 		theText.text = textLines[currentLine];
-
+		//Si presionas enter
 		if(Input.GetKeyDown(KeyCode.Return))
 		{
 			currentLine += 1;
 		}
-
+		//Indica el final del dialogo
 		if(currentLine > endAtLine)
 		{
 			DisableTextBox();
@@ -68,7 +66,7 @@ public class TextBoxManager : MonoBehaviour {
 
 
 	}
-
+	//Activa la caja de texto
 	public void EnableTextBox()
 	{
 		textBox.SetActive(true);
@@ -79,23 +77,23 @@ public class TextBoxManager : MonoBehaviour {
 			player.canMove = false;
 		}
 	}
-
+	//Desactiva la caja de texto
 	public void DisableTextBox()
 	{
 		textBox.SetActive(false);
 		isActive = false;
-		
-		player.canMove = true;
-		
-	}
 
+		player.canMove = true;
+
+	}
+	//Recarga las funciones
 	public void ReloadScript(TextAsset theText)
 	{
 		if(theText !=null)
 		{
 			textLines = new string[1];
 			textLines = (theText.text.Split('\n'));
-			
+
 		}
 	}
 }

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
-    
+
     public GameObject currentCheckpoint;
-    
+
     private control player;
-    
+
 	public int pointPenaltyOnDeath;
 
 	public HealthManager healthManager;
@@ -17,19 +17,20 @@ public class LevelManager : MonoBehaviour {
 		healthManager = FindObjectOfType<HealthManager>();
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
-    
+
+    //Hace que el jugador reaparesca
     public void RespawnPlayer()
     {
 
-	scoremanager1.AddPoints(-pointPenaltyOnDeath);
-        Debug.Log ("Player Respawn");
-        player.transform.position = currentCheckpoint.transform.position;
-	healthManager.FullHealth();
-	healthManager.isDead = false;
+	    scoremanager1.AddPoints(-pointPenaltyOnDeath);
+      Debug.Log ("Player Respawn");
+      player.transform.position = currentCheckpoint.transform.position;
+	    healthManager.FullHealth();
+	    healthManager.isDead = false;
     }
 }

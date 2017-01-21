@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Para dar una vida cuando se pase sobre ella
 public class lifePickup : MonoBehaviour {
 
 	private LifeManager lifeSystem;
@@ -10,7 +10,7 @@ public class lifePickup : MonoBehaviour {
 	void Start () {
 		lifeSystem = FindObjectOfType<LifeManager>();
 	}
-	
+
 	void OnTriggerEnter2D(Collider2D other)
 		{
 			if (other.name == "gato2")

@@ -12,34 +12,38 @@ public class LevelLoader : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		playerInZone = false;		
+		//Dice si el jugador llego al final o no
+		playerInZone = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
+		//Desbloquea el siguiente nivel y lleva al jugador a otro nivel
 	if(Input.GetButton("Vertical") && playerInZone)
 	{
 		PlayerPrefs.SetInt (levelTag, 1);
 		Application.LoadLevelAsync(levelToLoad);
 	}
-		
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-	if(other.name == "gato2")
-	{		
+		//Dice cuando el juagdor esta al final del nivel
+		if(other.name == "gato2")
+		{
 
-	playerInZone = true;
-	}
+			playerInZone = true;
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D other)
 	{
-	if(other.name == "gato2")
-	{		
+		//Dice cuando el juagdor no esta al final del nivel
+		if(other.name == "gato2")
+		{
 
-	playerInZone = false;
-	}
+			playerInZone = false;
+		}
 	}
 }

@@ -24,6 +24,7 @@ public class LevelSelectManager : MonoBehaviour {
 
 		for(int i = 0; 1 < levelTags.Length; i++)
 		{
+		//Funcion de desbloquear niveles
 			if(PlayerPrefs.GetInt(levelTags[i]) == null)
 			{
 				levelUnlocked[i] = false;
@@ -36,23 +37,25 @@ public class LevelSelectManager : MonoBehaviour {
 			{
 				locks[i].SetActive (false);
 			}
-			
+
 		}
+		//Para que se mueva el cursor del selector de niveles
 		transform.position = locks[positionSelector].transform.position + new Vector3(0, distanceBelowLock, 0);
 
 	}
 
 	void Update ()
 	{
+		//Detecta como y cuando se mueve el jugador dentro de el menú de seleccion de niveles
 		if(!isPressed)
 		{
 			if(Input.GetAxis("Horizontal") > 0.25f)
 			{
 				positionSelector += 1;
 				isPressed = true;
-			}		
+			}
 
-		
+
 			if(Input.GetAxis("Horizontal") < -0.25f)
 			{
 				positionSelector -= 1;
@@ -72,11 +75,11 @@ public class LevelSelectManager : MonoBehaviour {
 
 		if(isPressed)
 		{
-			
+
 			if(Input.GetAxis("Horizontal") < 0.25f && Input.GetAxis("Horizontal") > -0.25f)
 			{
 				isPressed = false;
-			}			
+			}
 
 		}
 
