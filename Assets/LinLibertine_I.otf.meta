@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 102f59bfb944146cab55933a01dc049d
+timeCreated: 1482539289
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Linux Libertine Initials O
+  fontNames:
+  - Linux Libertine Initials O
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
