@@ -12,6 +12,8 @@ public class MainMenu : MonoBehaviour {
 
 	public string level1Tag;
 
+	public string controlScreen;
+
 	//Que hace el boton NewGame
 	public void NewGame()
 	{
@@ -38,4 +40,11 @@ public class MainMenu : MonoBehaviour {
 		Application.Quit();
 
 	}
+	//Carga la imagen de los controles
+	public void Controles()
+	{
+		Application.LoadLevel (controlScreen);
+	}
+
+
 }

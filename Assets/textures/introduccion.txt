@@ -4,3 +4,8 @@ No te preocupes
 Si encuentras una caja podrás dormir en ella
 Solo salta con Espacio por los techos
 Yo te espero
+
+Hola de nuevo
+Como ya te habrás dado cuenta,
+si presionas las teclas de movimiento hacia un muro
+te quedarás pegado a el y podrás trepar saltando

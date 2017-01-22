@@ -1,7 +1,7 @@
 ﻿Muy bien!
 Espero que continúe bien tu viaje
 Y si quieres hablar con alguien presiona “E”
-Lo que esta a mi lado
-Es una jaula, no la toques.
+Lo que esta a mi lado izquierdo es una jaula, no la toques.
+Lo que esta a mi lado derecho es una vida, la necesitaras.
 Y ten cuidado con las personas
 pueden ser peligrosas

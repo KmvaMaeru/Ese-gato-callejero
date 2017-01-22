@@ -43,6 +43,7 @@ public class LifeManager : MonoBehaviour {
 		//Si la pantalla de GameOver esta activa
 		if(gameOverScreen.activeSelf)
 		{
+			//Funcion de reloj
 			waitAfterGameOver -= Time.deltaTime;
 		}
 		//Si acabó el tiempo de espera de la pantalla de GameOver
