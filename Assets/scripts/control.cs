@@ -3,29 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class control : MonoBehaviour {
-
+  //Valores de las acciones
     public float moveSpeed;
+    public float initialSpeed;
     public float moveVelocity;
+    public float runMultiplier;
     public float jumpHeight;
 	private DosPuntos wallStick;
-
+  //Deteccion del piso
     public Transform groundCheck;
     public float groundCheckRadius;
     public LayerMask whatIsGround;
     private bool grounded;
-
+    //Valores del empuje de los enemigos
 	public float knockback;
 	public float knockbackLength;
 	public float knockbackCount;
 	public bool knockFromRight;
-
+  //Detecta el Animador
 	public Animator anim;
-
+  //Para que no se pueda mover el jugador
 	public bool  canMove;
 
 
 	// Use this for initialization
 	void start() {
+
 	anim = GetComponent<Animator>();
 	wallStick = GetComponent<DosPuntos>();
 
@@ -59,7 +62,18 @@ public class control : MonoBehaviour {
 
 	//La velocidad a la que va es igual a la rápides que determines por el lado al que lo mandes
 
-         moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
+  if(Input.GetKeyDown(KeyCode.LeftShift))
+  {
+    moveSpeed = runMultiplier;
+  }
+  if(Input.GetKeyUp(KeyCode.LeftShift))
+  {
+    moveSpeed = initialSpeed;
+  }
+   moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
+
+
+
 
          //Determina como sera el empuje de ser herido
   if(knockbackCount <= 0)
