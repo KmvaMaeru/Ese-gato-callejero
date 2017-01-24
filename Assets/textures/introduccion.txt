@@ -9,3 +9,16 @@ Hola de nuevo
 Como ya te habrás dado cuenta,
 si presionas las teclas de movimiento hacia un muro
 te quedarás pegado a el y podrás trepar saltando
+
+¡Muy buen trabajo!
+Ahora puedes dormir en la caja
+solamente necesitas presionar "W" o la tecla direccional arriba
+
+Sabes, los ratones son lo mejor que hay
+¡Intenta cazar los más que puedas!
+
+¿Recuerdas que te dije que los humanos son peligrosos?
+Pues por allá hay unos humanos muy malvados
+Si te atrapan te llevan a un lugar llamado perrera
+Ahí esta repleto de perros que ladran y ladran.
+Sabrás que son ellos por que llevan una jaula

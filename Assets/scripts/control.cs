@@ -62,11 +62,11 @@ public class control : MonoBehaviour {
 
 	//La velocidad a la que va es igual a la rápides que determines por el lado al que lo mandes
 
-  if(Input.GetKeyDown(KeyCode.LeftShift))
+  if(Input.GetKeyDown(KeyCode.Q))
   {
     moveSpeed = runMultiplier;
   }
-  if(Input.GetKeyUp(KeyCode.LeftShift))
+  if(Input.GetKeyUp(KeyCode.Q))
   {
     moveSpeed = initialSpeed;
   }
