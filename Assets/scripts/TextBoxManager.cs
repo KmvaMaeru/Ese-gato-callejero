@@ -82,6 +82,7 @@ public class TextBoxManager : MonoBehaviour {
 	{
 		textBox.SetActive(false);
 		isActive = false;
+		player.moveSpeed = player.initialSpeed;
 
 		player.canMove = true;
 
