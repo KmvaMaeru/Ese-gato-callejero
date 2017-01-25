@@ -23,7 +23,7 @@ public class control : MonoBehaviour {
   //Detecta el Animador
 	public Animator anim;
   //Para que no se pueda mover el jugador
-	public bool  canMove;
+	public bool canMove;
 
 
 	// Use this for initialization

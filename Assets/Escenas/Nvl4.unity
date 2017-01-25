@@ -1476,6 +1476,11 @@ Prefab:
       propertyPath: m_SortingOrder
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 114054649626910836, guid: da98f556abb764bdd8cb1ae9dc974b26,
+        type: 2}
+      propertyPath: levelTag
+      value: level5lock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da98f556abb764bdd8cb1ae9dc974b26, type: 2}
   m_IsPrefabParent: 0
