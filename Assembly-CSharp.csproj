@@ -71,6 +71,7 @@
      <Compile Include="Assets\scripts\MainMenu.cs" />
      <Compile Include="Assets\scripts\MoonMove.cs" />
      <Compile Include="Assets\scripts\Pausa.cs" />
+     <Compile Include="Assets\scripts\Piranna.cs" />
      <Compile Include="Assets\scripts\TextBoxManager.cs" />
      <Compile Include="Assets\scripts\TextImporter.cs" />
      <Compile Include="Assets\scripts\control.cs" />
