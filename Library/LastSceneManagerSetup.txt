@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Escenas/Nvl12.unity
+- path: Assets/Escenas/Menu.unity
   isLoaded: 1
   isActive: 1

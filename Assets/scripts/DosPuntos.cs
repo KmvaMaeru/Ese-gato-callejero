@@ -43,7 +43,7 @@ public class DosPuntos : MonoBehaviour {
 
 
   //Las condiciones para poder saltar
-  if(Input.GetKeyDown(KeyCode.Space)&& wallStick)
+  if(Input.GetButtonDown("Jump")&& wallStick)
         {
 
 		{

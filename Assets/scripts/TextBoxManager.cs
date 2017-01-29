@@ -54,7 +54,7 @@ public class TextBoxManager : MonoBehaviour {
 		}
 		theText.text = textLines[currentLine];
 		//Si presionas enter
-		if(Input.GetKeyDown(KeyCode.Return))
+		if(Input.GetButtonDown("Submit"))
 		{
 			currentLine += 1;
 		}

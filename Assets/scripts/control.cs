@@ -62,11 +62,11 @@ public class control : MonoBehaviour {
 
 	//La velocidad a la que va es igual a la rápides que determines por el lado al que lo mandes
 
-  if(Input.GetKeyDown(KeyCode.Q))
+  if(Input.GetButtonDown("Fire1"))
   {
     moveSpeed = runMultiplier;
   }
-  if(Input.GetKeyUp(KeyCode.Q))
+  if(Input.GetButtonUp("Fire1"))
   {
     moveSpeed = initialSpeed;
   }

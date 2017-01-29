@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8337dc3a6e0d444d3b9e333ae268888e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 9
-  playerRange: 10
+  moveSpeed: 8
+  playerRange: 5
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
