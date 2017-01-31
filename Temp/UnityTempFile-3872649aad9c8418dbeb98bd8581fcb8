@@ -104,6 +104,7 @@ Assets/scripts/MainMenu.cs
 Assets/scripts/MoonMove.cs
 Assets/scripts/Pausa.cs
 Assets/scripts/Piranna.cs
+Assets/scripts/Shading.cs
 Assets/scripts/TextBoxManager.cs
 Assets/scripts/TextImporter.cs
 Assets/scripts/control.cs
