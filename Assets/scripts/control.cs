@@ -26,6 +26,7 @@ public class control : MonoBehaviour {
 	public bool canMove;
 
 
+
 	// Use this for initialization
 	void start() {
 
@@ -96,7 +97,6 @@ public class control : MonoBehaviour {
 
 	else if(GetComponent<Rigidbody2D>().velocity.x < 0)
 	transform.localScale = new Vector3(-5f, 5f, 1f);
-
 
 	}
 

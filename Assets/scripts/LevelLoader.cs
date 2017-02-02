@@ -14,15 +14,22 @@ public class LevelLoader : MonoBehaviour {
 	void Start () {
 		//Dice si el jugador llego al final o no
 		playerInZone = false;
-	}
 
+	}
+	IEnumerator ChangeLevel()
+	{
+	 float fadeTime = GameObject.Find("MainHUD").GetComponent<Shading>().BeginFade(1);
+	 yield return new WaitForSeconds(fadeTime);
+	 Application.LoadLevelAsync(levelToLoad);
+	}
 	// Update is called once per frame
 	void Update () {
+
 		//Desbloquea el siguiente nivel y lleva al jugador a otro nivel
 	if(Input.GetButton("Vertical") && playerInZone)
 	{
 		PlayerPrefs.SetInt (levelTag, 1);
-		Application.LoadLevelAsync(levelToLoad);
+		StartCoroutine(ChangeLevel());
 	}
 
 	}

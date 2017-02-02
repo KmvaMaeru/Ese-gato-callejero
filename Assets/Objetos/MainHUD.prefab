@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 223673333324693918}
   - component: {fileID: 114177719676601172}
   - component: {fileID: 114186713113055142}
+  - component: {fileID: 114822476131341982}
   m_Layer: 5
   m_Name: MainHUD
   m_TagString: Untagged
@@ -563,6 +564,19 @@ MonoBehaviour:
   player: {fileID: 0}
   mainMenu: Menu
   waitAfterGameOver: 5
+--- !u!114 &114822476131341982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1324573645437638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3774a817d95c145c4b162fb690b6f64f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 96c6f5354c093467493af7577c7841cf, type: 3}
+  fadeSpeed: 0.8
 --- !u!114 &114857065398232200
 MonoBehaviour:
   m_ObjectHideFlags: 1
