@@ -60,6 +60,7 @@
      <Compile Include="Assets\scripts\Controller.cs" />
      <Compile Include="Assets\scripts\DosPuntos.cs" />
      <Compile Include="Assets\scripts\EnemyPatrol.cs" />
+     <Compile Include="Assets\scripts\FlyAnimation.cs" />
      <Compile Include="Assets\scripts\HealthManager.cs" />
      <Compile Include="Assets\scripts\HurtPlayerOnContact.cs" />
      <Compile Include="Assets\scripts\KillPlayer.cs" />

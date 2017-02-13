@@ -10,10 +10,12 @@ public class Checkpoint : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		levelManager = FindObjectOfType<LevelManager>();
+
 	}
 
 	// Update is called once per frame
 	void Update () {
+
 
 	}
 
