@@ -26,6 +26,7 @@ public class control : MonoBehaviour {
 	public bool canMove;
 
 
+
 	// Use this for initialization
 	void start() {
 
@@ -53,28 +54,35 @@ public class control : MonoBehaviour {
 	if(!grounded)
 	anim.SetBool("Grounded", false);
 
-
+#if UNITY_STANDALONE || UNITY_WEBPLAYER
 		//Determina que si presionas espacio salta
         if(Input.GetButtonDown ("Jump") && grounded)
         {
 	         Jump();
         }
 
-	//La velocidad a la que va es igual a la rápides que determines por el lado al que lo mandes
+
+
+	//Llama a la funcion de correr
 
   if(Input.GetButtonDown("Fire1"))
   {
-    moveSpeed = runMultiplier;
+    //moveSpeed = runMultiplier;
+    Dash();
   }
   if(Input.GetButtonUp("Fire1"))
   {
-    moveSpeed = initialSpeed;
+    //moveSpeed = initialSpeed;
+    ResetDash();
   }
-   moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
 
 
 
+   //moveVelocity = moveSpeed * Input.GetAxisRaw("Horizontal");
+   Move (Input.GetAxisRaw("Horizontal"));
 
+
+#endif
          //Determina como sera el empuje de ser herido
   if(knockbackCount <= 0)
 	{
@@ -97,9 +105,19 @@ public class control : MonoBehaviour {
 	else if(GetComponent<Rigidbody2D>().velocity.x < 0)
 	transform.localScale = new Vector3(-5f, 5f, 1f);
 
-
 	}
-
+  public void Move (float moveInput)
+  {
+    moveVelocity = moveSpeed * moveInput;
+  }
+  public void Dash ()
+  {
+    moveSpeed = runMultiplier;
+  }
+  public void ResetDash ()
+  {
+    moveSpeed = initialSpeed;
+  }
 
   //Dice que es el salto
 	public void Jump()

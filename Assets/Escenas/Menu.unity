@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6569826983786410482a7cf1ab3f98ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLevel: Nvl1Retry
+  startLevel: Story1
   levelSelect: NvlSelect
   playerLives: 3
   level1Tag: level1lock

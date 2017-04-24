@@ -18,6 +18,8 @@ public class LevelSelectManager : MonoBehaviour {
 
 	public bool isPressed;
 
+	public bool touchMode;
+
 
 	void Start ()
 	{
@@ -87,7 +89,7 @@ public class LevelSelectManager : MonoBehaviour {
 
 		if(Input.GetButtonDown("Jump"))
 			{
-			if(levelUnlocked[positionSelector])
+			if(levelUnlocked[positionSelector] && !touchMode)
 			{
 				Application.LoadLevel(levelName[positionSelector]);
 			}

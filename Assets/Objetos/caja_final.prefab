@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1911611560750374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 88.1, y: -1.62, z: 0}
+  m_LocalPosition: {x: 88.1, y: -5.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929e7dfd08603436ca75fa301837a6fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: NvlSelect
+  playerInZone: 0
+  levelToLoad: Nvl2Retry
   levelTag: level2lock
 --- !u!212 &212671910034311668
 SpriteRenderer:
