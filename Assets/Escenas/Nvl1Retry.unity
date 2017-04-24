@@ -195,25 +195,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83cae78b2b2864a95b0083f980291978, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &97067157 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1428503925180832, guid: 83cae78b2b2864a95b0083f980291978,
-    type: 2}
-  m_PrefabInternal: {fileID: 97067156}
---- !u!58 &97067158
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 97067157}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0.000000059604645}
-  serializedVersion: 2
-  m_Radius: 0.1
 --- !u!4 &103390921 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4128532906739656, guid: 83cae78b2b2864a95b0083f980291978,
@@ -2202,11 +2183,6 @@ Prefab:
     - target: {fileID: 4900182426947182, guid: da98f556abb764bdd8cb1ae9dc974b26, type: 2}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 114054649626910836, guid: da98f556abb764bdd8cb1ae9dc974b26,
-        type: 2}
-      propertyPath: levelToLoad
-      value: Nvl2Retry
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da98f556abb764bdd8cb1ae9dc974b26, type: 2}

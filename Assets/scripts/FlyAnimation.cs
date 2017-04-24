@@ -19,7 +19,6 @@ public class FlyAnimation : MonoBehaviour {
 		if(canFly)
 		{
 		transform.position = Vector3.MoveTowards(transform.position, objetive.transform.position, moveSpeed * Time.deltaTime);
-		anim.SetBool("Current", true);
 		}
 	}
 	void OnTriggerEnter2D(Collider2D other)

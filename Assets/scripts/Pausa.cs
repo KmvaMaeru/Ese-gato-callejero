@@ -29,8 +29,12 @@ public class Pausa : MonoBehaviour {
 			//Si de presiona Escape
 			if(Input.GetKeyDown(KeyCode.Escape))
 		{
-			isPaused = !isPaused;
+			PauseUnpaused();
 		}
+		}
+		public void PauseUnpaused()
+		{
+			isPaused = !isPaused;
 		}
 
 	//Que hace el boton Resume

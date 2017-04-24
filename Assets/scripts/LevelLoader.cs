@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelLoader : MonoBehaviour {
 
-	private bool playerInZone;
+	public bool playerInZone;
 
 	public string levelToLoad;
 
@@ -22,6 +22,8 @@ public class LevelLoader : MonoBehaviour {
 	 yield return new WaitForSeconds(fadeTime);
 	 Application.LoadLevelAsync(levelToLoad);
 	}
+
+
 	// Update is called once per frame
 	void Update () {
 
@@ -32,6 +34,10 @@ public class LevelLoader : MonoBehaviour {
 		StartCoroutine(ChangeLevel());
 	}
 
+	}
+	public void LoadLevel()
+	{
+		StartCoroutine(ChangeLevel());
 	}
 
 	void OnTriggerEnter2D(Collider2D other)

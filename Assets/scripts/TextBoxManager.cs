@@ -56,7 +56,8 @@ public class TextBoxManager : MonoBehaviour {
 		//Si presionas enter
 		if(Input.GetButtonDown("Submit"))
 		{
-			currentLine += 1;
+			//currentLine += 1;
+			Submit();
 		}
 		//Indica el final del dialogo
 		if(currentLine > endAtLine)
@@ -66,6 +67,12 @@ public class TextBoxManager : MonoBehaviour {
 
 
 	}
+
+	public void Submit()
+	{
+		currentLine += 1;
+	}
+
 	//Activa la caja de texto
 	public void EnableTextBox()
 	{
