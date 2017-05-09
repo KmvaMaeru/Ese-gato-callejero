@@ -54,9 +54,9 @@ public class control : MonoBehaviour {
 	if(!grounded)
 	anim.SetBool("Grounded", false);
 
-#if UNITY_STANDALONE || UNITY_WEBPLAYER
+#if UNITY_STANDALONE 
 		//Determina que si presionas espacio salta
-        if(Input.GetButtonDown ("Jump") && grounded)
+        if(Input.GetButtonDown ("Jump"))
         {
 	         Jump();
         }
@@ -122,6 +122,8 @@ public class control : MonoBehaviour {
   //Dice que es el salto
 	public void Jump()
 	{
+    if(grounded){
 	GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
+}
 	}
 }
