@@ -9,7 +9,7 @@ public class control : MonoBehaviour {
     public float moveVelocity;
     public float runMultiplier;
     public float jumpHeight;
-	private DosPuntos wallStick;
+	public DosPuntos wallStick;
   //Deteccion del piso
     public Transform groundCheck;
     public float groundCheckRadius;
@@ -54,7 +54,7 @@ public class control : MonoBehaviour {
 	if(!grounded)
 	anim.SetBool("Grounded", false);
 
-#if UNITY_STANDALONE 
+#if UNITY_STANDALONE
 		//Determina que si presionas espacio salta
         if(Input.GetButtonDown ("Jump"))
         {

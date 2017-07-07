@@ -10,7 +10,9 @@ public class LevelSelectTouch : MonoBehaviour {
 	void Start () {
 		theLevelSelectManager = FindObjectOfType<LevelSelectManager>();
 
+		#if UNITY_ANDROID
 		theLevelSelectManager.touchMode = true;
+		#endif
 
 	}
 
@@ -33,6 +35,7 @@ public class LevelSelectTouch : MonoBehaviour {
 	}
 
 	public void LoadLevel(){
+		if (theLevelSelectManager.levelUnlocked[theLevelSelectManager.positionSelector])
 		Application.LoadLevel(theLevelSelectManager.levelName[theLevelSelectManager.positionSelector]);
 	}
 

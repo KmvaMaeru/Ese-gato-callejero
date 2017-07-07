@@ -7,33 +7,52 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Escenas/DemoSplash.unity
+    guid: a39caa1e3c3e241c0932697d84cdefb6
   - enabled: 1
     path: Assets/Escenas/Menu.unity
+    guid: d2701b4da9b90427e98f2844b2e9a292
   - enabled: 1
     path: Assets/Escenas/NvlSelect.unity
+    guid: ec9cf2a990cf54110a27d88600c3b67a
   - enabled: 1
     path: Assets/Escenas/Nvl1Retry.unity
+    guid: 2a9303445ca3448648e47d51871260c1
   - enabled: 1
     path: Assets/Escenas/Nvl2Retry.unity
+    guid: 492fae4f242a14005b0a40f35710195a
   - enabled: 1
     path: Assets/Escenas/Nvl3.unity
+    guid: de1d2f5fdec3d437eabfcb3883344641
   - enabled: 1
     path: Assets/Escenas/Nvl4.unity
+    guid: ded14d3b9f36f4fe385d7844bc05ed4d
   - enabled: 1
     path: Assets/Escenas/Controles.unity
+    guid: 099dac41aec2b4360b43a967a165751a
   - enabled: 1
     path: Assets/Escenas/Nvl5.unity
+    guid: 71c1e7e8fdffe45d9b71319980f737a9
   - enabled: 1
     path: Assets/Escenas/Nvl10.unity
+    guid: 9f41be929988f414e9835f1db0a26b5e
   - enabled: 1
     path: Assets/Escenas/Nvl13.unity
+    guid: 7c2e1e52931e14959bf92ff6a7e17bbb
   - enabled: 1
     path: Assets/Escenas/Story1.unity
+    guid: 35bf7f67d5f634c7b95ac43f074408e2
   - enabled: 1
     path: Assets/Escenas/Story2.unity
+    guid: 14d02f933961f4d37ad5fb833dc7c3c8
   - enabled: 1
     path: Assets/Escenas/Story3.unity
+    guid: 8897ccc18bb864c67b58e4a609f27cd7
   - enabled: 1
     path: Assets/Escenas/Story4.unity
+    guid: 6152b60c87c02447ca46a572ecb6407d
   - enabled: 1
     path: Assets/Escenas/DemoEnd.unity
+    guid: e4e21803822b5441697ba68c647cf47f
+  - enabled: 1
+    path: Assets/Escenas/Settings.unity
+    guid: 3a67361bd99be4010821c7e6dd36adde

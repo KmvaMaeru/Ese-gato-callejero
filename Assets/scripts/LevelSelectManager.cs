@@ -24,6 +24,12 @@ public class LevelSelectManager : MonoBehaviour {
 	void Start ()
 	{
 
+		#if UNITY_STANDALONE
+
+				touchMode = false;
+
+		#endif
+
 		for(int i = 0; 1 < levelTags.Length; i++)
 		{
 		//Funcion de desbloquear niveles
@@ -41,13 +47,19 @@ public class LevelSelectManager : MonoBehaviour {
 			}
 
 		}
+
+
 		//Para que se mueva el cursor del selector de niveles
 		transform.position = locks[positionSelector].transform.position + new Vector3(0, distanceBelowLock, 0);
+
 
 	}
 
 	void Update ()
 	{
+
+
+
 		//Detecta como y cuando se mueve el jugador dentro de el menú de seleccion de niveles
 		if(!isPressed)
 		{

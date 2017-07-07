@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TouchControls : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class TouchControls : MonoBehaviour {
 	private TextBoxManager theTexts;
 	private LevelLoader levels;
 	private Pausa pauseMenu;
+	public GameObject touchControls;
 	// Use this for initialization
 	void Start () {
 		thePlayer = FindObjectOfType<control>();
@@ -15,7 +17,18 @@ public class TouchControls : MonoBehaviour {
 		levels = FindObjectOfType<LevelLoader>();
 		pauseMenu = FindObjectOfType<Pausa>();
 
+		#if UNITY_STANDALONE
+
+		touchControls.SetActive (false);
+
+		#endif
 	}
+
+
+	#if UNITY_ANDROID
+
+	touchControls.SetActive(true);
+
 	public void LeftArrow()
 	{
 		thePlayer.Move(-1);
@@ -55,5 +68,5 @@ public class TouchControls : MonoBehaviour {
 	{
 		pauseMenu.PauseUnpaused();
 	}
-
+		#endif
 }
