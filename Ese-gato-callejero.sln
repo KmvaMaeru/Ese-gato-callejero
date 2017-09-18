@@ -1,9 +1,9 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{E122916B-67DB-3D44-B5B7-F9F57B3C03E8}") = "Ese-gato-callejero", "Assembly-CSharp.csproj", "{55F0D173-2FDC-E9C8-5AE0-9385FB6A5374}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ese-gato-callejero", "Assembly-CSharp.csproj", "{55F0D173-2FDC-E9C8-5AE0-9385FB6A5374}"
 EndProject
-Project("{E122916B-67DB-3D44-B5B7-F9F57B3C03E8}") = "Ese-gato-callejero", "Assembly-CSharp-Editor.csproj", "{68CB5B62-D9FD-DE63-EEBB-C7D706A666F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ese-gato-callejero", "Assembly-CSharp-Editor.csproj", "{68CB5B62-D9FD-DE63-EEBB-C7D706A666F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -56,3 +56,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Settings.unity
     guid: 3a67361bd99be4010821c7e6dd36adde
+  - enabled: 1
+    path: Assets/Escenas/Keybinding.unity
+    guid: 5e5ab535550924522a9a425117cadc76

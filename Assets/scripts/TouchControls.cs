@@ -27,7 +27,7 @@ public class TouchControls : MonoBehaviour {
 
 	#if UNITY_ANDROID
 
-	touchControls.SetActive(true);
+
 
 	public void LeftArrow()
 	{

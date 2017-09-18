@@ -11,6 +11,7 @@ public class EnemyPatrol : MonoBehaviour {
     	public float wallCheckRadius;
     	public LayerMask whatIsWall;
     	private bool hittingWall;
+	public float scaleOfObject;
 
 	private bool atEdge;
 	public Transform edgeCheck;
@@ -33,10 +34,10 @@ public class EnemyPatrol : MonoBehaviour {
 
 		if(moveRight)
 		{
-			transform.localScale = new Vector3(-5f, 5f, 5f);
+			transform.localScale = new Vector3(-1f*(scaleOfObject), 1f*(scaleOfObject), 1f*(scaleOfObject));
 			GetComponent<Rigidbody2D>().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		} else {
-			transform.localScale = new Vector3(5f, 5f, 5f);
+			transform.localScale = new Vector3 (1f * (scaleOfObject), 1f * (scaleOfObject), 1f * (scaleOfObject));
 			GetComponent<Rigidbody2D>().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 
 			}
